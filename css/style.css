@@ -55,7 +55,7 @@ hr {
   border: none;
   height: 4px;
   color: black;
-  background-color: black;
+  background-color: #2d3945;
 }
 
 hr ~ hr {
@@ -76,6 +76,14 @@ input {
   border: none;
   background-color: #eff0f1;
   border-radius: 5px;
+}
+
+input:focus {
+  border: 2px solid #46698b;
+}
+
+label {
+  color: #7a8896;
 }
 
 .newsletter {
