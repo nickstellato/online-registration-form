@@ -1,0 +1,106 @@
+/****************************************************/
+/*  Universal Styles                                */
+/****************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+/****************************************************/
+/*  Main Styles                                     */
+/****************************************************/
+
+h1,
+h3,
+header p,
+footer p {
+  text-align: center;
+}
+
+h1,
+header p {
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  background-color: navy;
+  color: white;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1em;
+  width: 98%;
+}
+
+p {
+  color: grey;
+}
+
+h2 > p {
+  color: black;
+}
+
+header p {
+  width: 85%;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  color: black;
+  background-color: black;
+}
+
+hr ~ hr {
+  height: 2px;
+  margin-top: -3px;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 15px 20px;
+  border: none;
+  background-color: beige;
+  border-radius: 5px;
+}
+
+.newsletter {
+  border-top: 2px solid black;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background: green;
+  border: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer p {
+  font-style: italic;
+  color: grey;
+}
+/****************************************************/
+/*  helper classes                                  */
+/****************************************************/
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.br {
+  border-radius: 5px;
+}
