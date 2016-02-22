@@ -83,6 +83,18 @@ option {
 
 select {
   font-weight: 300;
+  font-size: .9em;
+}
+
+input:placeholder-shown {
+  text-align: right;
+  font-size: .8em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+select {
+  font-weight: 300;
   color: grey;
 }
 
