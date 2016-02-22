@@ -81,6 +81,11 @@ option {
   border-radius: 5px;
 }
 
+select {
+  font-weight: 300;
+  color: grey;
+}
+
 input:focus,
 select:focus {
   border: 2px solid #46698b;
