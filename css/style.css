@@ -84,6 +84,7 @@ option {
 select {
   font-weight: 300;
   font-size: .9em;
+  color: grey;
 }
 
 input:placeholder-shown {
@@ -91,11 +92,6 @@ input:placeholder-shown {
   font-size: .8em;
   font-weight: 300;
   font-style: italic;
-}
-
-select {
-  font-weight: 300;
-  color: grey;
 }
 
 input:focus,
