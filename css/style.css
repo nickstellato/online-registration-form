@@ -79,7 +79,6 @@ option {
   border: none;
   background-color: #eff0f1;
   border-radius: 5px;
-  text-align: right;
 }
 
 input:focus,
