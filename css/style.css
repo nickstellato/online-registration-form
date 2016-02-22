@@ -64,21 +64,26 @@ hr ~ hr {
 }
 
 label,
-input {
+input,
+select {
   display: block;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-input {
+input,
+select,
+option {
   padding: 15px 20px;
   border: none;
   background-color: #eff0f1;
   border-radius: 5px;
+  text-align: right;
 }
 
-input:focus {
+input:focus,
+select:focus {
   border: 2px solid #46698b;
 }
 
