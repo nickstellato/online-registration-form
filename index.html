@@ -19,17 +19,22 @@
       <hr>
       <form>
         <h2>Contact Information</h2>
-        <fieldset>
+        <fieldset class="contact-information">
           <label for="name">Full Name</label>
           <input type="text" name="name" placeholder="Required">
+
           <label for="email">Email Address</label>
           <input type="email" name="email" placeholder="Required">
+
           <label for="phone">Phone Number</label>
           <input type="telephone" name="phone">
+
           <label for="address">Street Address</label>
           <input type="text" name="address">
+
           <label for="city">City</label>
           <input type="text" name="city">
+
           <label for="state">State</label>
           <select name="state">
             <option value="choose_state">Choose State</option>
@@ -84,26 +89,35 @@
             <option value="wisconsin">Wisconsin</option>
             <option value="wyoming">Wyoming</option>
           </select>
+
           <label for="zip">Zip</label>
           <input type="text" name="zip">
         </fieldset>
+
       <hr>
+
       <h2>Newsletter</h2>
-        <fieldset>
+
+        <fieldset class="newsletter-type">
           <legend>Select the newsletter you would like to receive</legend>
-          <input type="checkbox" name="newsletter" value="HTML"> HTML News
-          <input type="checkbox" name="newsletter" value="CSS"> CSS News
-          <input type="checkbox" name="newsletter" value="Javascrpit"> Javascript News
+          <input type="checkbox" name="newsletter" value="HTML"> HTML News <br>
+          <input type="checkbox" name="newsletter" value="CSS"> CSS News <br>
+          <input type="checkbox" name="newsletter" value="Javascrpit"> Javascript News <br>
         </fieldset>
-        <fieldset>
+
+        <fieldset class="newsletter-format">
           <legend>Newsletter format</legend>
-          <input type="radio" name="format" value="HTML" checked> HTML
-          <input type="radio" name="format" value="text"> Plain text
-          <legend>Other topics you'd like to hear about</legend>
-          <input type="textfield" name="other">
+          <input type="radio" name="format" value="HTML" checked> HTML <br>
+          <input type="radio" name="format" value="text"> Plain text <br>
         </fieldset>
+
+        <legend>Other topics you'd like to hear about</legend>
+        <input type="textarea" name="other">
+
         <button class="br" type="submit" name="submit">Sign Up</button>
+
       </form>
+
       <footer>
         <p>Copyright The Code Review</p>
       </footer>
