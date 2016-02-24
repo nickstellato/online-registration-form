@@ -18,8 +18,10 @@
       <hr>
       <hr>
       <form>
-        <h2>Contact Information</h2>
         <fieldset class="contact-information">
+
+          <legend>Contact Information</legend>
+
           <label for="name">Full Name</label>
           <input type="text" name="name" placeholder="Required">
 
@@ -92,28 +94,38 @@
 
           <label for="zip">Zip</label>
           <input type="text" name="zip">
+
         </fieldset>
 
       <hr>
 
-      <h2>Newsletter</h2>
+        <fieldset class="newsletter">
 
-        <fieldset class="newsletter-type">
-          <legend>Select the newsletter you would like to receive</legend>
-          <input type="checkbox" name="newsletter" value="HTML"> HTML News <br>
-          <input type="checkbox" name="newsletter" value="CSS"> CSS News <br>
-          <input type="checkbox" name="newsletter" value="Javascrpit"> Javascript News <br>
+          <legend>Newsletter</legend>
+
+          <p>Select the newsletter you would like to receive</p>
+
+          <input type="checkbox" name="newsletter" value="HTML" id="html_news">
+          <label for="html_news"><span></span>HTML News</label><br>
+
+          <input type="checkbox" name="newsletter" value="CSS" id="CSS">
+          <label for="CSS"><span></span>CSS News</label><br>
+          <input type="checkbox" name="newsletter" value="Javascrpit" id="javascript">
+          <label for="javascript"><span></span>Javascript News</label><br>
+
+          <p>Newsletter format</p>
+
+          <input type="radio" name="format" value="HTML" id="html_format" checked>
+          <label for="html_format"><span></span>HTML</label><br>
+
+          <input type="radio" name="format" value="text" id="plain_text">
+          <label for="plain_text"><span></span>Plain text</label><br>
+
+          <p>Other topics you'd like to hear about</p>
+          <input type="textarea" name="other">
+
         </fieldset>
-
-        <fieldset class="newsletter-format">
-          <legend>Newsletter format</legend>
-          <input type="radio" name="format" value="HTML" checked> HTML <br>
-          <input type="radio" name="format" value="text"> Plain text <br>
-        </fieldset>
-
-        <legend>Other topics you'd like to hear about</legend>
-        <input type="textarea" name="other">
-
+            
         <button class="br" type="submit" name="submit">Sign Up</button>
 
       </form>

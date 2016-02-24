@@ -114,12 +114,50 @@ legend {
   margin: 20px 0;
 }
 
-input[type=checkbox] {
-  border: none;
+input[type="checkbox"] {
+  display: none;
 }
 
-input[type=checkbox]:checked {
+input[type="checkbox"] + label span {
+  display: inline-block;
+  background: #eff0f1;
+  width: 19px;
+  height: 19px;
+  margin: -1px 10px 10px 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label span {
   border: 2px solid black;
+  background: url("../img/checkmark-512px.svg");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  background: #eff0f1;
+  width: 19px;
+  height: 19px;
+  margin: -1px 10px 10px 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label span {
+  border: 2px solid black;
+  background: url("../img/bullet.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 input[type=textarea] {
@@ -133,13 +171,21 @@ button {
   color: white;
   background: #4ebbb5;
   border: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.25em;
+  margin-bottom: 1.5em;
 }
 
 footer p {
   font-style: italic;
-  color: grey;
+  color: #aaafb4;
+  margin-top: 1.25em;
+  margin-bottom: 12em;
+  font-size: 1em;
+  font-weight: 100;
 }
 /****************************************************/
 /*  helper classes                                  */
