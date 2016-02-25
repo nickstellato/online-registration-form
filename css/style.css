@@ -13,13 +13,13 @@
 
 h1,
 h3,
-.intro p,
+header p,
 footer p {
   text-align: center;
 }
 
 h1,
-.intro p {
+header p {
   margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ h2 > p {
   color: black;
 }
 
-.intro {
+header {
   margin-bottom: 35px;
 }
 
@@ -55,7 +55,7 @@ header {
 
 }
 
-.intro {
+header {
   display: block;
 }
 
@@ -141,7 +141,7 @@ label {
 }
 
 input[name="zip"] {
-  width: 50%;
+  width: 33%;
 }
 
 input[type="checkbox"] {
@@ -228,4 +228,20 @@ footer p {
 
 .br {
   border-radius: 5px;
+}
+
+/****************************************************/
+/*  media queries                                   */
+/****************************************************/
+
+@media (min-width: 768px) {
+  label {
+    width: 20%;
+    display: inline;
+  }
+
+  input {
+    width: 80%;
+    display: inline;
+  }
 }
