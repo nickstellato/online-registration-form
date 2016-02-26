@@ -157,7 +157,7 @@ input[type="radio"] + label span {
   height: 19px;
   margin: -1px 10px 10px 0;
   cursor: pointer;
-  vertical-align: top;
+  vertical-align: text-top;
   border-radius: 5px;
 }
 
