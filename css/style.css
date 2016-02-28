@@ -123,8 +123,7 @@ select {
   background-size: 20px 20px;
 }
 
-input:placeholder-shown {
-  text-align: right;
+input[placeholder] {
   font-size: .8em;
   font-weight: 300;
   font-style: italic;
