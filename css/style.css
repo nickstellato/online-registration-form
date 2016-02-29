@@ -96,6 +96,7 @@ textarea {
 }
 
 input,
+input:optional,
 select,
 option,
 textarea {
@@ -116,6 +117,12 @@ textarea:focus {
   border: 2px solid #46698b;
   padding: 15px 20px;
   box-shadow: 0 0 5px rgba(70, 105, 139, 1);
+}
+
+input[placeholder="required"]:after {
+  content: "\f12a";
+  font-style: normal;
+  font-size: 2em;
 }
 
 input::-webkit-input-placeholder {
