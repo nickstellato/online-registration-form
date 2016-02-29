@@ -125,29 +125,11 @@ input::-webkit-input-placeholder {
   font-size: .9em;
 }
 
-input::-webkit-input-placeholder:after {
-  font-family: FontAwesome;
-  content: "\f12a";
-  color: red;
-  font-size: 1.5em;
-  padding-left: .3em;
-  font-style: normal;
-}
-
 input::-moz-placeholder {
   text-align: right;
   text-transform: capitalize;
   font-style: italic;
   font-size: .9em;
-}
-
-input::-moz-placeholder:after {
-  font-family: FontAwesome;
-  content: "\f12a";
-  color: red;
-  font-size: 1.5em;
-  padding-left: .3em;
-  font-style: normal;
 }
 
 input::-ms-input-placeholder {
@@ -157,29 +139,11 @@ input::-ms-input-placeholder {
   font-size: .9em;
 }
 
-input::-ms-input-placeholder:after {
-  font-family: FontAwesome;
-  content: "\f12a";
-  color: red;
-  font-size: 1.5em;
-  padding-left: .3em;
-  font-style: normal;
-}
-
 input::-moz-placeholder {
   text-align: right;
   text-transform: capitalize;
   font-style: italic;
   font-size: .9em;
-}
-
-input::-moz-placeholder:after {
-  font-family: FontAwesome;
-  content: "\f12a";
-  color: red;
-  font-size: 1.5em;
-  padding-left: .3em;
-  font-style: normal;
 }
 
 select {
