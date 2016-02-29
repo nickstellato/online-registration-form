@@ -107,18 +107,8 @@ select,
 option,
 textarea {
   padding: 15px 20px;
-  border: none;
   background-color: #eff0f1;
   border-radius: 5px;
-}
-
-select {
-  -webkit-appearance: none;
-  background: url("../img/chevron-down.png") no-repeat #eff0f1;
-  background-size: 20px 20px;
-  background-position: 95% 50%;
-  color: grey;
-  font-style: italic;
 }
 
 input:focus,
@@ -126,6 +116,17 @@ select:focus,
 textarea:focus {
   border: 2px solid #46698b;
   border-radius: 5px;
+}
+
+select {
+  -webkit-appearance: none;
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-color: #eff0f1;
+  background-size: 20px 20px;
+  background-position: 95% 50%;
+  color: grey;
+  font-style: italic;
 }
 
 label {
