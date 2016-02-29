@@ -113,11 +113,12 @@ textarea {
 }
 
 select {
-  font-weight: 300;
-  font-size: .9em;
-  color: grey;
-  background: url("../img/chevron-down.png") no-repeat 95% #eff0f1;
+  -webkit-appearance: none;
+  background: url("../img/chevron-down.png") no-repeat #eff0f1;
   background-size: 20px 20px;
+  background-position: 95% 50%;
+  color: grey;
+  font-style: italic;
 }
 
 input:focus,
@@ -125,7 +126,6 @@ select:focus,
 textarea:focus {
   border: 2px solid #46698b;
   border-radius: 5px;
-  background: #eff0f1;
 }
 
 label {
