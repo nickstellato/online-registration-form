@@ -8,7 +8,7 @@
 }
 
 /****************************************************/
-/*  Main Styles                                     */
+/*  Header Styles                                     */
 /****************************************************/
 
 h1,
@@ -59,20 +59,9 @@ header {
   display: block;
 }
 
-.one {
-  border: none;
-  height: 5px;
-  color: black;
-  background-color: #2d3945;
-}
-
-.two {
-  border: none;
-  height: 2px;
-  color: black;
-  background-color: #2d3945;
-  margin-top: -4px;
-}
+/****************************************************/
+/*  Form Styles                                     */
+/****************************************************/
 
 fieldset {
   border: none;
@@ -87,6 +76,10 @@ legend {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+/****************************************************/
+/*  contact information styles                      */
+/****************************************************/
 
 .contact-information label,
 .contact-information input,
@@ -108,17 +101,54 @@ option,
 textarea {
   padding: 15px 20px;
   background-color: #eff0f1;
-  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-color: #eeeeee;
+  -webkit-transition-property: border, padding, box-shadow;
+  -webkit-transition-duration: .5s;
+  -webkit-transition-timing-finction: ease-in;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   border: 2px solid #46698b;
-  border-radius: 5px;
+  padding: 15px 20px;
+  box-shadow: 0 0 5px rgba(70, 105, 139, 1);
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: .9em;
+}
+
+input::-moz-placeholder {
+  text-align: right;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: .9em;
+}
+
+input::-ms-input-placeholder {
+  text-align: right;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: .9em;
+}
+
+input::-moz-placeholder {
+  text-align: right;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: .9em;
 }
 
 select {
+  position: relative;
+  overflow: hidden;
   -webkit-appearance: none;
   background-image: url("../img/chevron-down.png");
   background-repeat: no-repeat;
@@ -126,7 +156,6 @@ select {
   background-size: 20px 20px;
   background-position: 95% 50%;
   color: grey;
-  font-style: italic;
 }
 
 label {
@@ -135,13 +164,17 @@ label {
   font-weight: 100;
 }
 
+#zip {
+  width: 33%;
+}
+
+/****************************************************/
+/*  newsletter styles                               */
+/****************************************************/
+
 .newsletter p {
   font-size: .9em;
   line-height: 1.5;
-}
-
-#zip {
-  width: 33%;
 }
 
 input[type="checkbox"],
@@ -184,6 +217,34 @@ input[type="radio"]:checked + label span {
   background-position: center;
 }
 
+div.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+input.fa-star {
+  display: none;
+}
+
+label.fa-star {
+  padding: .4em;
+  font-size: 2em;
+  color: #eff0f1;
+  transition: all .2s;
+}
+
+input.fa-star:checked ~ label.fa-star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.fa-star-5:checked ~ label.fa-star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
 button {
   width: 100%;
   color: white;
@@ -197,6 +258,10 @@ button {
   margin-bottom: 1em;
 }
 
+/****************************************************/
+/*  footer styles                                   */
+/****************************************************/
+
 footer p {
   font-style: italic;
   color: #aaafb4;
@@ -205,6 +270,7 @@ footer p {
   font-size: 1em;
   font-weight: 100;
 }
+
 /****************************************************/
 /*  helper classes                                  */
 /****************************************************/
@@ -213,6 +279,21 @@ footer p {
   width: 90%;
   margin: 0 auto;
   max-width: 900px;
+}
+
+.one {
+  border: none;
+  height: 5px;
+  color: black;
+  background-color: #2d3945;
+}
+
+.two {
+  border: none;
+  height: 2px;
+  color: black;
+  background-color: #2d3945;
+  margin-top: -4px;
 }
 
 /****************************************************/
