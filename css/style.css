@@ -116,17 +116,8 @@ select {
   font-weight: 300;
   font-size: .9em;
   color: grey;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background: url("../img/chevron-down.png") no-repeat 95% #eff0f1;
   background-size: 20px 20px;
-}
-
-input[placeholder] {
-  font-size: .8em;
-  font-weight: 300;
-  font-style: italic;
 }
 
 input:focus,
