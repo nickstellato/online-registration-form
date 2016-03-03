@@ -225,6 +225,7 @@ div.stars {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 input.fa-star {
@@ -306,7 +307,7 @@ footer p {
 /*  media queries                                   */
 /****************************************************/
 
-@media (min-width: 900px) {
+@media (min-width: 760px) {
 
   h3 {
     margin-top: 60px;

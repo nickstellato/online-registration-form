@@ -18,7 +18,7 @@
     <div class="wrapper">
       <hr class="one">
       <hr class="two">
-      <form>
+      <form method="post" action="#">
         <fieldset class="contact-information">
 
           <legend>Contact Information</legend>
@@ -125,24 +125,24 @@
 
           <p>How would you rate our content?</p>
           <div class="stars">
-            <input class="fa fa-star star-1" id="star-1" type="radio" name="star"/>
+            <input class="fa fa-star star-1" id="star-1" type="radio" name="star" value="1"/>
             <label class="fa fa-star star-1" for="star-1"></label>
 
-            <input class="fa fa-star star-2" id="star-2" type="radio" name="star"/>
+            <input class="fa fa-star star-2" id="star-2" type="radio" name="star" value="2"/>
             <label class="fa fa-star star-2" for="star-2"></label>
 
-            <input class="fa fa-star star-3" id="star-3" type="radio" name="star"/>
+            <input class="fa fa-star star-3" id="star-3" type="radio" name="star" value="3"/>
             <label class="fa fa-star star-3" for="star-3"></label>
 
-            <input class="fa fa-star star-4" id="star-4" type="radio" name="star"/>
+            <input class="fa fa-star star-4" id="star-4" type="radio" name="star" value="4"/>
             <label class="fa fa-star star-4" for="star-4"></label>
 
-            <input class="fa fa-star star-5" id="star-5" type="radio" name="star"/>
+            <input class="fa fa-star star-5" id="star-5" type="radio" name="star" value="5"/>
             <label class="fa fa-star star-5" for="star-5"></label>
           </div>
 
-          <p>Other topics you'd like to hear about</p>
-          <textarea name="other" rows="4"></textarea>
+          <label for="other-topics">Other topics you'd like to hear about</label>
+          <textarea name="other-topics" id="other-topics" rows="4"></textarea>
 
         </fieldset>
 
