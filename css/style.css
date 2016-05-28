@@ -326,6 +326,6 @@ footer p {
   }
 
   input[name="zip"] {
-    width: 33%;
+    width: 150px;
   }
 }
